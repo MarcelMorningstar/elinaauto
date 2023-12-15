@@ -214,8 +214,8 @@ export default function Home({ home }) {
                 <h4 className='leading-6 text-2xl font-light uppercase'>{t("common:subsection2.3")}</h4>
 
                 {
-                  home.businessHours.map(item => (
-                    <span className="leading-5 text-lg drop-shadow-md capitalize">{`${ item.day }: ${ item.hours } `}</span>
+                  home.businessHours.map((id, item) => (
+                    <span key={id} className="leading-5 text-lg drop-shadow-md capitalize">{`${ item.day }: ${ item.hours } `}</span>
                   ))
                 }
               </div>
