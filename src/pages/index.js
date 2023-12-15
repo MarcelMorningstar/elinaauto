@@ -36,34 +36,34 @@ export default function Home({ home }) {
       {
         windowSize.width >= 1280 ? (
           <header id="header" className='overflow-hidden flex flex-row w-full h-screen'>
-            <a href='/service/shop' className={headerStyle.category1}>
+            <Link href='/service/shop' className={headerStyle.category1}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <Image src={img} width={160} alt="icon" />
                 <h2 className="w-44 text-background text-center">{ home.title1 }</h2>
               </div>
-            </a>
-            <a href='/service/car-repair'  className={headerStyle.category2}>
+            </Link>
+            <Link href='/service/car-repair'  className={headerStyle.category2}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage2).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <Image src={img} width={160} alt="icon" />
                 <h2 className="w-44 text-background text-center">{ home.title2 }</h2>
               </div>
-            </a>
-            <a href='/service/body-repair' className={headerStyle.category3}>
+            </Link>
+            <Link href='/service/body-repair' className={headerStyle.category3}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <Image src={img} width={160} alt="icon" />
                 <h2 className="w-44 text-background text-center">{ home.title3 }</h2>
               </div>
-            </a>
-            <a href='/service/car-glass-repair' className={headerStyle.category4}>
+            </Link>
+            <Link href='/service/car-glass-repair' className={headerStyle.category4}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage4).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <Image src={img} width={160} alt="icon" />
                 <h2 className="w-44 text-background text-center">{ home.title4 }</h2>
               </div>
-            </a>
+            </Link>
           </header>
         ) : windowSize.width >= 700 ? (
           <header id="header">
@@ -102,7 +102,7 @@ export default function Home({ home }) {
           </header>
         ) : (
           <header id="header" className='overflow-hidden flex flex-col w-full h-screen'>
-            <a href='/service/shop' className={headerStyle.category1}>
+            <Link href='/service/shop' className={headerStyle.category1}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <div className="relative w-full h-[10vh]">
@@ -111,8 +111,8 @@ export default function Home({ home }) {
                 
                 <h2 className="text-background text-center">{ home.title1 }</h2>
               </div>
-            </a>
-            <a href='/service/car-repair' className={headerStyle.category2}>
+            </Link>
+            <Link href='/service/car-repair' className={headerStyle.category2}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage2).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <div className="relative w-full h-[10vh]">
@@ -121,8 +121,8 @@ export default function Home({ home }) {
 
                 <h2 className="text-background text-center">{ home.title2 }</h2>
               </div>
-            </a>
-            <a href='/service/body-repair' className={headerStyle.category3}>
+            </Link>
+            <Link href='/service/body-repair' className={headerStyle.category3}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <div className="relative w-full h-[10vh]">
@@ -131,8 +131,8 @@ export default function Home({ home }) {
 
                 <h2 className="text-background text-center">{ home.title3 }</h2>
               </div>
-            </a>
-            <a href='/service/car-glass-repair' className={headerStyle.category4}>
+            </Link>
+            <Link href='/service/car-glass-repair' className={headerStyle.category4}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage4).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <div className="relative w-full h-[10vh]">
@@ -141,7 +141,7 @@ export default function Home({ home }) {
 
                 <h2 className="text-background text-center">{ home.title4 }</h2>
               </div>
-            </a>
+            </Link>
           </header>
         )
       }
