@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { disableScroll, enableScroll } from "@/utils/scroll";
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { Inter } from 'next/font/google'
 import useTranslation from 'next-translate/useTranslation'
