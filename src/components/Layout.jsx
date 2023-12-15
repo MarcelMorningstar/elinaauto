@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { disableScroll, enableScroll } from "@/utils/scroll";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { Inter } from 'next/font/google'
 import useTranslation from 'next-translate/useTranslation'
@@ -47,6 +48,10 @@ export default function Layout({ children, titles }) {
   
   return (
     <main className={`${inter.className}`}>
+      <Head>
+        <title>Elīna Auto</title>
+      </Head>
+
       <nav className="fixed z-10 w-full transition-all duration-500" style={open ? { height: '100vh' } : { height: '0' }}>
         <MdMenu id="menuBtn" className="block absolute top-3 right-5 w-8 h-8 sm:w-10 sm:h-10 transition-colors duration-500 cursor-pointer" color={color} style={open ? {display: 'none'} : {display: 'block'}} onClick={toogleMenu} />
 
@@ -62,12 +67,12 @@ export default function Layout({ children, titles }) {
           </div>
 
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-5">
-            <a href="/#about-us" className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{t("common:section1")}</a>
-            <a href="/#contact-us" className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{t("common:section2")}</a>
-            <a href='/service/shop' className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{ titles[0] }</a>
-            <a href='/service/car-repair' className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{ titles[1] }</a>
-            <a href='/service/body-repair' className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{ titles[2] }</a>
-            <a href='/service/car-glass-repair' className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{ titles[3] }</a>
+            <Link href="/#about-us" className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{t("common:section1")}</Link>
+            <Link href="/#contact-us" className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{t("common:section2")}</Link>
+            <Link href='/service/shop' className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{ titles[0] }</Link>
+            <Link href='/service/car-repair' className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{ titles[1] }</Link>
+            <Link href='/service/body-repair' className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{ titles[2] }</Link>
+            <Link href='/service/car-glass-repair' className="text-xl font-medium text-center text-background hover:text-highlight transition-all uppercase" onClick={toogleMenu}>{ titles[3] }</Link>
           </div>
         </div>
       </nav>

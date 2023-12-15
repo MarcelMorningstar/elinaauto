@@ -4,6 +4,7 @@ import ImageModal from "@/components/ImageModal"
 import useWindowSize from "@/utils/useWindowSize"
 import { disableScroll } from "@/utils/scroll";
 
+import Link from "next/link";
 import Image from "next/image"
 import { client, imageUrlFor, fileUrlFor } from '@/sanity'
 import useTranslation from 'next-translate/useTranslation'
@@ -67,36 +68,36 @@ export default function Home({ home }) {
         ) : windowSize.width >= 700 ? (
           <header id="header">
             <div className="overflow-hidden flex flex-row w-full h-[50vh]">
-              <a href='/service/shop' className={headerStyle.category1}>
+              <Link href='/service/shop' className={headerStyle.category1}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
                 <div className={headerStyle.heading}>
                   <Image src={img} width={160} alt="icon" />
                   <h2 className="w-44 text-background text-center">{ home.title1 }</h2>
                 </div>
-              </a>
-              <a href='/service/car-repair' className={headerStyle.category2}>
+              </Link>
+              <Link href='/service/car-repair' className={headerStyle.category2}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage2).url() })`}}></div>
                 <div className={headerStyle.heading}>
                   <Image src={img} width={160} alt="icon" />
                   <h2 className="w-44 text-background text-center">{ home.title2 }</h2>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="overflow-hidden flex flex-row w-full h-[50vh]">
-              <a href='/service/body-repair' className={headerStyle.category3}>
+              <Link href='/service/body-repair' className={headerStyle.category3}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
                 <div className={headerStyle.heading}>
                   <Image src={img} width={160} alt="icon" />
                   <h2 className="w-44 text-background text-center">{ home.title3 }</h2>
                 </div>
-              </a>
-              <a href='/service/car-glass-repair' className={headerStyle.category4}>
+              </Link>
+              <Link href='/service/car-glass-repair' className={headerStyle.category4}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage4).url() })`}}></div>
                 <div className={headerStyle.heading}>
                   <Image src={img} width={160} alt="icon" />
                   <h2 className="w-44 text-background text-center">{ home.title4 }</h2>
                 </div>
-              </a>
+              </Link>
             </div>
           </header>
         ) : (
