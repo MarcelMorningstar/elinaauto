@@ -23,6 +23,8 @@ export default function Home({ home }) {
   const [imageType, setImageType] = useState('image')
   const windowSize = useWindowSize()
 
+  console.log(home.businessHours)
+
   const previewImage = (url, type) => {
     setImagePreview(url)
     setImageType(type)
@@ -214,7 +216,7 @@ export default function Home({ home }) {
                 <h4 className='leading-6 text-2xl font-light uppercase'>{t("common:subsection2.3")}</h4>
 
                 {
-                  home.businessHours.map((id, item) => (
+                  home.businessHours.map((item, id) => (
                     <span key={id} className="leading-5 text-lg drop-shadow-md capitalize">{`${ item.day }: ${ item.hours } `}</span>
                   ))
                 }
