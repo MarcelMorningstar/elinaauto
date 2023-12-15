@@ -1,0 +1,8 @@
+{
+  "locales": ["lv", "ru"],
+  "defaultLocale": "lv",
+  "pages": {
+    "*": ["common"]
+  },
+  "keySeparator": ":"
+}

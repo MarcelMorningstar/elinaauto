@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #921224;
+  --background: #EBEBEB;
+  --text: #252525;
+  --highlight: #b89e6b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  scroll-behavior: smooth;
+}
+
+main {
+  min-height: 100vh;
+}
+
+section {
+  display: inline-block;
+  width: 100%;
+  padding: 0 clamp(20px, 16%, 400px);
+  margin: 5vh 0;
+}
+
+h1 {
+  padding: 0 clamp(20px, 20%, 400px);
+}
+
+h2 {
+  line-height: clamp(1.225rem, 0.775rem + 2.8vw, 2.1rem);
+  font-size: clamp(1.125rem, 0.775rem + 2.8vw, 2rem);
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: clamp(1.3125rem, 0.6563rem + 5.25vw, 2.625rem);
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
