@@ -6,7 +6,7 @@ export default function List({ tag, data }) {
     return (
       <div>
             {
-                data.map((item, id) => {
+                data && data.map((item, id) => {
                     if (item._type === 'category') {
                         return <Category 
                             category={tag}
