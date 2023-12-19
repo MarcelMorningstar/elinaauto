@@ -12,11 +12,16 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+  user-select: none;
 }
+
+/* #a:hover + img {
+  transform: scale(1.1);
+} */
 
 body {
   background-color: var(--background);
-  scroll-behavior: smooth;
 }
 
 main {
@@ -30,10 +35,6 @@ section {
   margin: 5vh 0;
 }
 
-h1 {
-  padding: 0 clamp(20px, 20%, 400px);
-}
-
 h2 {
   line-height: clamp(1.225rem, 0.775rem + 2.8vw, 2.1rem);
   font-size: clamp(1.125rem, 0.775rem + 2.8vw, 2rem);
@@ -43,9 +44,9 @@ h2 {
 }
 
 h3 {
+  line-height: clamp(1.4rem, 0.6563rem + 5.25vw, 2.7rem);
   font-size: clamp(1.3125rem, 0.6563rem + 5.25vw, 2.625rem);
   font-weight: 700;
   color: var(--text);
-  white-space: nowrap;
   text-transform: uppercase;
 }
