@@ -13,7 +13,7 @@ export default function Category(props) {
                 windowSize.width >= 1280 ? (
                     <div className={`flex ${ props.nr % 2 ? 'flex-row-reverse' : 'flex-row' } gap-12`}>
                         <div className='relative w-1/2 aspect-video'>
-                            <Image className="object-cover" src={ props.image } fill sizes="40vw" alt="service" />
+                            <Image className="bg-neutral-400 object-cover" src={ props.image } fill sizes="40vw" alt="service" />
                         </div>
 
                         <div className={`w-1/2 py-4 ${ props.nr % 2 ? 'text-right' : 'text-left' }`}>
@@ -33,7 +33,7 @@ export default function Category(props) {
                         <h3 className="mb-1 text-center whitespace-break-spaces">{ props.title }</h3>
 
                         <div className='relative w-3/4 aspect-video'>
-                            <Image className="object-cover" src={ props.image } fill sizes="75vw" alt="service" />
+                            <Image className="bg-neutral-400 object-cover" src={ props.image } fill sizes="75vw" alt="service" />
                         </div>
 
                         <p className="text-center">{ props.text }</p>

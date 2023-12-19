@@ -162,33 +162,33 @@ export default function Home({ home }) {
 
         <div className='flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16'>
           <div className='grid grid-cols-3 grid-rows-3 gap-2 sm:gap-3 md:gap-4 w-full sm:w-4/5 md:w-2/3 lg:w-1/2 h-min'>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage1).url(), 'image')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage1).url(), 'image')}>
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsImage1).url()} fill sizes="200px" alt="about us image"/>
             </div>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(fileUrlFor(home.aboutUsVideo1).url, 'video')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(fileUrlFor(home.aboutUsVideo1).url, 'video')}>
               <MdOutlinePlayCircle className={`${aboutusStyle.playIcon} absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/5 h-2/5 text-background/90 drop-shadow-lg`} />
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsVideoThumbnail1).url()} fill sizes="200px" alt="about us image"/>
             </div>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage2).url(), 'image')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage2).url(), 'image')}>
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsImage2).url()} fill sizes="200px" alt="about us image"/>
             </div>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(fileUrlFor(home.aboutUsVideo2).url, 'video')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(fileUrlFor(home.aboutUsVideo2).url, 'video')}>
               <MdOutlinePlayCircle className={`${aboutusStyle.playIcon} absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/5 h-2/5 text-background/90 drop-shadow-lg`} />
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsVideoThumbnail2).url()} fill sizes="200px" alt="about us image"/>
             </div>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage3).url(), 'image')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage3).url(), 'image')}>
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsImage3).url()} fill sizes="200px" alt="about us image"/>
             </div>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage4).url(), 'image')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage4).url(), 'image')}>
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsImage4).url()} fill sizes="200px" alt="about us image"/>
             </div>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage5).url(), 'image')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage5).url(), 'image')}>
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsImage5).url()} fill sizes="200px" alt="about us image"/>
             </div>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage6).url(), 'image')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage6).url(), 'image')}>
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsImage6).url()} fill sizes="200px" alt="about us image"/>
             </div>
-            <div className='overflow-hidden relative aspect-square cursor-pointer' onClick={() => previewImage(fileUrlFor(home.aboutUsVideo2).url, 'video')}>
+            <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(fileUrlFor(home.aboutUsVideo2).url, 'video')}>
               <MdOutlinePlayCircle className={`${aboutusStyle.playIcon} absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/5 h-2/5 text-background/90 drop-shadow-lg`} />
               <Image className="object-cover hover:scale-110 transition-all" src={imageUrlFor(home.aboutUsVideoThumbnail3).url()} fill sizes="200px" alt="about us image"/>
             </div>
@@ -234,7 +234,7 @@ export default function Home({ home }) {
           </div>
 
           <div className='flex justify-center w-full lg:w-1/2'>
-            <div className='block w-full lg:h-[500px] aspect-square lg:aspect-auto rounded-3xl shadow-lg'>
+            <div className='block w-full lg:h-[500px] aspect-square lg:aspect-auto bg-neutral-400 rounded-3xl shadow-lg'>
               <Map />
             </div>
           </div>
