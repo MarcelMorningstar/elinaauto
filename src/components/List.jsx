@@ -19,7 +19,7 @@ export default function List({ tag, data }) {
                             subPage={item.subPage} 
                         />
                     } else if (item._type === 'gallery') {
-                        return <div></div>
+                        return <div key={item._key}></div>
                     }
                 })
             }
