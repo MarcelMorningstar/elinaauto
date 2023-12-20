@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import { client } from '@/sanity'
 
-export default function bodyRepair({ index, data }) {
+export default function Page({ index, data }) {
     const router = useRouter()
 
     return (
