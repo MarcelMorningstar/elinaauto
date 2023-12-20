@@ -16,10 +16,6 @@
   user-select: none;
 }
 
-/* #a:hover + img {
-  transform: scale(1.1);
-} */
-
 body {
   background-color: var(--background);
 }

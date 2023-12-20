@@ -33,9 +33,9 @@ export default function ImageModal({ visible, setVisible, url, type }) {
 
       {
         type === 'image' ? (
-          <img className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto h-[66vh] object-contain" src={url} alt="about us image" />
+          <img className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto max-w-[90%] max-h-[66vh] object-contain" src={url} alt="about us image" />
         ) : type === 'video' && (
-          <video className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto h-[66vh]" ref={videoRef} autoPlay loop controls><source src={url} type="video/mp4" /></video>
+          <video className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto max-w-[90%] max-h-[66vh]" ref={videoRef} autoPlay loop controls><source src={url} type="video/mp4" /></video>
         )
       }
     </div>
