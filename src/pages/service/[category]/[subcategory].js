@@ -1,9 +1,10 @@
 import Layout from '@/components/ServiceLayout';
+
 import { useRouter } from 'next/router'
 
 import { client } from '@/sanity'
 
-export default function Page({ index }) {
+export default function Page({ index, data }) {
   const router = useRouter()
 
   return (
@@ -13,7 +14,7 @@ export default function Page({ index }) {
   )
 }
 
-export async function getStaticPaths({ id }) {
+export async function getStaticPaths({ category, subcategory }) {
   return {
     paths: [], // indicates that no page needs be created at build time
     fallback: 'blocking' // indicates the type of fallback

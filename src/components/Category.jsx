@@ -1,6 +1,8 @@
 import useWindowSize from "@/utils/useWindowSize"
+
 import Link from "next/link";
 import Image from "next/image"
+
 import useTranslation from "next-translate/useTranslation";
 
 export default function Category(props) {
