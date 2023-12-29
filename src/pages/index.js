@@ -40,7 +40,7 @@ export default function Home({ home }) {
     <Layout heading={home.heading} titles={[home.title1, home.title2, home.title3, home.title4]}>
       {
         windowSize.width >= 1280 ? (
-          <header id="header" className="overflow-hidden flex flex-row w-full h-screen">
+          <header id="header" className={headerStyle.container1}>
             <Link href='/service/shop' className={headerStyle.category1}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
@@ -72,7 +72,7 @@ export default function Home({ home }) {
           </header>
         ) : windowSize.width >= 700 ? (
           <header id="header">
-            <div className="overflow-hidden flex flex-row w-full h-[50vh]">
+            <div className={headerStyle.container2}>
               <Link href='/service/shop' className={headerStyle.category1}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
                 <div className={headerStyle.heading}>
@@ -88,7 +88,7 @@ export default function Home({ home }) {
                 </div>
               </Link>
             </div>
-            <div className="overflow-hidden flex flex-row w-full h-[50vh]">
+            <div className={headerStyle.container2}>
               <Link href='/service/body-repair' className={headerStyle.category3}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
                 <div className={headerStyle.heading}>
@@ -106,7 +106,7 @@ export default function Home({ home }) {
             </div>
           </header>
         ) : (
-          <header id="header" className="overflow-hidden flex flex-col w-full h-screen">
+          <header id="header" className={headerStyle.container3}>
             <Link href='/service/shop' className={headerStyle.category1}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
@@ -151,15 +151,11 @@ export default function Home({ home }) {
         )
       }
 
-      <div className='flex items-center justify-center h-52' style={{ padding: '0 clamp(20px, 20%, 400px)' }}><Image className="object-contain" src={imageUrlFor(home.logo).url()} width={300} height={104} alt="logo" /></div>
+      <div className='flex items-center justify-center h-52' style={{ padding: '0 clamp(20px, 20%, 400px)' }}>
+        <Image className="object-contain" src={imageUrlFor(home.logo).url()} width={300} height={104} alt="logo" />
+      </div>
 
       <section id="about-us">
-        <style jsx>{`
-          .play-icon:hover + img {
-            transform: scale(1.1);
-          }
-        `}</style>
-
         <div className='flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16'>
           <div className='grid grid-cols-3 grid-rows-3 gap-2 sm:gap-3 md:gap-4 w-full sm:w-4/5 md:w-2/3 lg:w-1/2 h-min'>
             <div className='overflow-hidden relative aspect-square bg-neutral-400 cursor-pointer' onClick={() => previewImage(imageUrlFor(home.aboutUsImage1).url(), 'image')}>

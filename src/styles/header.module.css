@@ -1,3 +1,27 @@
+.container1 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.container2 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+
+.container3 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
 .category1, .category2, .category3, .category4 {
     overflow: hidden;
     position: relative;
@@ -81,7 +105,7 @@
     transform: translateX(-180px) translateY(-50%) skew(18deg);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
     .category1, .category3 {
         left: -120px;
         flex: 0 0 64%;
@@ -114,7 +138,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 699px) {
     .category1, .category2, .category3, .category4 {
         transform: skew(0);
     }
