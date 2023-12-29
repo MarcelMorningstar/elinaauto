@@ -39,7 +39,7 @@ export default function Home({ home }) {
   return (
     <Layout heading={home.heading} titles={[home.title1, home.title2, home.title3, home.title4]}>
       {
-        windowSize.width >= 1280 ? (
+        windowSize.width > 1280 ? (
           <header id="header" className={headerStyle.container1}>
             <Link href='/service/shop' className={headerStyle.category1}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
@@ -70,7 +70,7 @@ export default function Home({ home }) {
               </div>
             </Link>
           </header>
-        ) : windowSize.width >= 700 ? (
+        ) : windowSize.width > 700 ? (
           <header id="header">
             <div className={headerStyle.container2}>
               <Link href='/service/shop' className={headerStyle.category1}>
