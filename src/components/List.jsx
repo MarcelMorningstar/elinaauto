@@ -1,8 +1,11 @@
 import Category from '@/components/Category'
+import Gallery from '@/components/Gallery'
 
 import { imageUrlFor } from '@/sanity'
 
 export default function List({ tag, data }) {
+    console.log(data)
+
     return (
       <div>
             {
@@ -19,7 +22,13 @@ export default function List({ tag, data }) {
                             subPage={item.subPage} 
                         />
                     } else if (item._type === 'gallery') {
-                        return <div key={item._key}></div>
+                        return <Gallery 
+                            category={tag}
+                            key={item._key} 
+                            title={item.heading} 
+                            text={item.text} 
+                            images={item.images}
+                        />
                     }
                 })
             }

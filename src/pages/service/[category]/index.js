@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, locale }) {
     const data = await client.fetch(`*[_type == "page" && tag == "${ params.category }" && language == "${ locale }"][0]{
-        pageBuilder[] {_key, _type, tag, heading, text, image, subPage[] { _key }}
+        pageBuilder[] {_key, _type, tag, heading, text, image, images, subPage[] { _key }}
     }`);
     const index = await client.fetch(`*[_type == "home" && language == "${ locale }"][0] {heading, title1, title2, title3, title4}`);
 

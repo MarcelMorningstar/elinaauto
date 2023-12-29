@@ -40,7 +40,7 @@ export default function Home({ home }) {
     <Layout heading={home.heading} titles={[home.title1, home.title2, home.title3, home.title4]}>
       {
         windowSize.width >= 1280 ? (
-          <header id="header" className='overflow-hidden flex flex-row w-full h-screen'>
+          <header id="header" className={headerStyle.container}>
             <Link href='/service/shop' className={headerStyle.category1}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
@@ -106,7 +106,7 @@ export default function Home({ home }) {
             </div>
           </header>
         ) : (
-          <header id="header" className='overflow-hidden flex flex-col w-full h-screen'>
+          <header id="header" className={headerStyle.container}>
             <Link href='/service/shop' className={headerStyle.category1}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
