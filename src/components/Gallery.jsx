@@ -10,8 +10,6 @@ export default function Gallery(props) {
     const [imageID, setPreviewimageID] = useState(null)
     const [image, setPreviewImage] = useState(null)
 
-    console.log(props.images[0])
-
     const previewImage = (url, id) => {
         setPreviewImage(url)
         setPreviewimageID(id)

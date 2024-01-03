@@ -4,10 +4,8 @@ import Gallery from '@/components/Gallery'
 import { imageUrlFor } from '@/sanity'
 
 export default function List({ tag, data }) {
-    console.log(data)
-
     return (
-      <div>
+        <div>
             {
                 data && data.map((item, id) => {
                     if (item._type === 'category') {
@@ -32,6 +30,6 @@ export default function List({ tag, data }) {
                     }
                 })
             }
-      </div>
+        </div>
     )
 }
