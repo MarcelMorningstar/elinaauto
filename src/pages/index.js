@@ -16,7 +16,10 @@ import { MdOutlinePlayCircle } from "react-icons/md";
 import headerStyle from '@/styles/header.module.css'
 import aboutusStyle from '@/styles/aboutus.module.css'
 
-import img from "../images/repair.png"
+import img1 from "../images/shop.png"
+import img2 from "../images/repair.png"
+import img3 from "../images/spray-gun.png"
+import img4 from "../images/car-door.png"
 
 export default function Home({ home }) {
   const { t } = useTranslation()
@@ -44,28 +47,28 @@ export default function Home({ home }) {
             <Link href='/service/shop' className={headerStyle.category1}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
-                <Image src={img} width={160} alt="icon" />
+                <Image src={img1} width={160} alt="icon" />
                 <h2 className="w-44 text-background text-center">{ home.title1 }</h2>
               </div>
             </Link>
             <Link href='/service/car-repair'  className={headerStyle.category2}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage2).url() })`}}></div>
               <div className={headerStyle.heading}>
-                <Image src={img} width={160} alt="icon" />
+                <Image src={img2} width={160} alt="icon" />
                 <h2 className="w-44 text-background text-center">{ home.title2 }</h2>
               </div>
             </Link>
             <Link href='/service/body-repair' className={headerStyle.category3}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
               <div className={headerStyle.heading}>
-                <Image src={img} width={160} alt="icon" />
+                <Image src={img3} width={160} alt="icon" />
                 <h2 className="w-44 text-background text-center">{ home.title3 }</h2>
               </div>
             </Link>
             <Link href='/service/car-glass-repair' className={headerStyle.category4}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage4).url() })`}}></div>
               <div className={headerStyle.heading}>
-                <Image src={img} width={160} alt="icon" />
+                <Image src={img4} width={160} alt="icon" />
                 <h2 className="w-44 text-background text-center">{ home.title4 }</h2>
               </div>
             </Link>
@@ -76,14 +79,14 @@ export default function Home({ home }) {
               <Link href='/service/shop' className={headerStyle.category1}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
                 <div className={headerStyle.heading}>
-                  <Image src={img} width={160} alt="icon" />
+                  <Image src={img1} width={160} alt="icon" />
                   <h2 className="w-44 text-background text-center">{ home.title1 }</h2>
                 </div>
               </Link>
               <Link href='/service/car-repair' className={headerStyle.category2}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage2).url() })`}}></div>
                 <div className={headerStyle.heading}>
-                  <Image src={img} width={160} alt="icon" />
+                  <Image src={img2} width={160} alt="icon" />
                   <h2 className="w-44 text-background text-center">{ home.title2 }</h2>
                 </div>
               </Link>
@@ -92,14 +95,14 @@ export default function Home({ home }) {
               <Link href='/service/body-repair' className={headerStyle.category3}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
                 <div className={headerStyle.heading}>
-                  <Image src={img} width={160} alt="icon" />
+                  <Image src={img3} width={160} alt="icon" />
                   <h2 className="w-44 text-background text-center">{ home.title3 }</h2>
                 </div>
               </Link>
               <Link href='/service/car-glass-repair' className={headerStyle.category4}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage4).url() })`}}></div>
                 <div className={headerStyle.heading}>
-                  <Image src={img} width={160} alt="icon" />
+                  <Image src={img4} width={160} alt="icon" />
                   <h2 className="w-44 text-background text-center">{ home.title4 }</h2>
                 </div>
               </Link>
@@ -111,7 +114,7 @@ export default function Home({ home }) {
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <div className="relative w-full h-[10vh]">
-                  <Image src={img} className="object-contain" fill alt="icon" />
+                  <Image src={img1} className="object-contain" fill alt="icon" />
                 </div>
                 
                 <h2 className="text-background text-center">{ home.title1 }</h2>
@@ -121,7 +124,7 @@ export default function Home({ home }) {
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage2).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <div className="relative w-full h-[10vh]">
-                  <Image src={img} className="object-contain" fill alt="icon" />
+                  <Image src={img2} className="object-contain" fill alt="icon" />
                 </div>
 
                 <h2 className="text-background text-center">{ home.title2 }</h2>
@@ -131,7 +134,7 @@ export default function Home({ home }) {
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <div className="relative w-full h-[10vh]">
-                  <Image src={img} className="object-contain" fill alt="icon" />
+                  <Image src={img3} className="object-contain" fill alt="icon" />
                 </div>
 
                 <h2 className="text-background text-center">{ home.title3 }</h2>
@@ -141,7 +144,7 @@ export default function Home({ home }) {
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage4).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <div className="relative w-full h-[10vh]">
-                  <Image src={img} className="object-contain" fill alt="icon" />
+                  <Image src={img4} className="object-contain" fill alt="icon" />
                 </div>
 
                 <h2 className="text-background text-center">{ home.title4 }</h2>
