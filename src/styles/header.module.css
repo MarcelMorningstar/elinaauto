@@ -94,15 +94,15 @@
 }
 
 .category2 .heading {
-    transform: translateX(-96px) translateY(-50%) skew(18deg);
+    transform: translateX(calc(-50% - 10px)) translateY(-50%) skew(18deg);
 }
 
 .category3 .heading {
-    transform: translateX(-101px) translateY(-50%) skew(18deg);
+    transform: translateX(calc(-50% - 20px)) translateY(-50%) skew(18deg);
 }
 
 .category4 .heading {
-    transform: translateX(-180px) translateY(-50%) skew(18deg);
+    transform: translateX(calc(-50% - 100px)) translateY(-50%) skew(18deg);
 }
 
 @media screen and (max-width: 1280px) {
@@ -122,19 +122,19 @@
     }
 
     .category1 .heading {
-        transform: translateX(-45px) translateY(-50%) skew(18deg);
+        transform: translateX(-25%) translateY(-50%) skew(18deg);
     }
     
     .category2 .heading {
-        transform: translateX(-120px) translateY(-50%) skew(18deg);
+        transform: translateX(calc(-25% - 100px)) translateY(-50%) skew(18deg);
     }
     
     .category3 .heading {
-        transform: translateX(-30px) translateY(-50%) skew(18deg);
+        transform: translateX(calc(-25% - 25px)) translateY(-50%) skew(18deg);
     }
     
     .category4 .heading {
-        transform: translateX(-120px) translateY(-50%) skew(18deg);
+        transform: translateX(calc(-25% - 100px)) translateY(-50%) skew(18deg);
     }
 }
 

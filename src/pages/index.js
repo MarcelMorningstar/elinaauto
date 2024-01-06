@@ -48,28 +48,28 @@ export default function Home({ home }) {
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <Image src={img1} width={160} alt="icon" />
-                <h2 className="w-44 text-background text-center">{ home.title1 }</h2>
+                <h2 className="text-background text-center">{ home.title1 }</h2>
               </div>
             </Link>
             <Link href='/service/car-repair'  className={headerStyle.category2}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage2).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <Image src={img2} width={160} alt="icon" />
-                <h2 className="w-44 text-background text-center">{ home.title2 }</h2>
+                <h2 className="text-background text-center">{ home.title2 }</h2>
               </div>
             </Link>
             <Link href='/service/body-repair' className={headerStyle.category3}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <Image src={img3} width={160} alt="icon" />
-                <h2 className="w-44 text-background text-center">{ home.title3 }</h2>
+                <h2 className="text-background text-center">{ home.title3 }</h2>
               </div>
             </Link>
             <Link href='/service/car-glass-repair' className={headerStyle.category4}>
               <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage4).url() })`}}></div>
               <div className={headerStyle.heading}>
                 <Image src={img4} width={160} alt="icon" />
-                <h2 className="w-44 text-background text-center">{ home.title4 }</h2>
+                <h2 className="text-background text-center">{ home.title4 }</h2>
               </div>
             </Link>
           </header>
@@ -80,14 +80,14 @@ export default function Home({ home }) {
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage1).url() })`}}></div>
                 <div className={headerStyle.heading}>
                   <Image src={img1} width={160} alt="icon" />
-                  <h2 className="w-44 text-background text-center">{ home.title1 }</h2>
+                  <h2 className="text-background text-center">{ home.title1 }</h2>
                 </div>
               </Link>
               <Link href='/service/car-repair' className={headerStyle.category2}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage2).url() })`}}></div>
                 <div className={headerStyle.heading}>
                   <Image src={img2} width={160} alt="icon" />
-                  <h2 className="w-44 text-background text-center">{ home.title2 }</h2>
+                  <h2 className="text-background text-center">{ home.title2 }</h2>
                 </div>
               </Link>
             </div>
@@ -96,14 +96,14 @@ export default function Home({ home }) {
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage3).url() })`}}></div>
                 <div className={headerStyle.heading}>
                   <Image src={img3} width={160} alt="icon" />
-                  <h2 className="w-44 text-background text-center">{ home.title3 }</h2>
+                  <h2 className="text-background text-center">{ home.title3 }</h2>
                 </div>
               </Link>
               <Link href='/service/car-glass-repair' className={headerStyle.category4}>
                 <div className={headerStyle.subcategory} style={{backgroundImage: `url(${ imageUrlFor(home.headerImage4).url() })`}}></div>
                 <div className={headerStyle.heading}>
                   <Image src={img4} width={160} alt="icon" />
-                  <h2 className="w-44 text-background text-center">{ home.title4 }</h2>
+                  <h2 className="text-background text-center">{ home.title4 }</h2>
                 </div>
               </Link>
             </div>
